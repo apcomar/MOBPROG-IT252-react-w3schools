@@ -4,7 +4,7 @@ export default function App() {
   return (
     <main className="min-h-screen flex items-center justify-center bg-slate-950 text-slate-100 p-6">
       <p className="text-lg sm:text-xl font-medium tracking-wide text-center">
-        Cup Noodles
+        Chris Paul hits a huge three to cut the lead down to 42
       </p>
     </main>
   );
