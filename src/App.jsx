@@ -1,11 +1,25 @@
-import React from 'react';
+const users = [
+  { id: 1, name: 'John', age: 30 },
+  { id: 2, name: 'Jane', age: 25 },
+  { id: 3, name: 'Bob', age: 35 },
+];
+
+function UserList() {
+  return (
+    <ul>
+      {users.map((user) => (
+        <li key={user.id}>
+          {user.name} is {user.age} years old
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 export default function App() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-slate-950 text-slate-100 p-6">
-      <p className="text-lg sm:text-xl font-medium tracking-wide text-center">
-        Chris Paul hits a huge three to cut the lead down to 42
-      </p>
+    <main>
+      <UserList />
     </main>
   );
 }
